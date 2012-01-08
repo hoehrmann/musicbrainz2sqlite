@@ -1,0 +1,9 @@
+musicbrainz2sqlite is a Perl script that converts the MusicBrainz data
+available http://ftp.musicbrainz.org/pub/musicbrainz/data/fullexport/
+from the MusicBrainz web site into a SQLite database. Usage:
+
+  % perl musicbrainz2sqlite.pl /path/to/mbdump musicbrainz.sqlite
+
+Note that it does not create indices other than for primary keys; use
+http://github.com/metabrainz/musicbrainz-server/blob/master/admin/sql/
+CreateIndexes.sql for that.
